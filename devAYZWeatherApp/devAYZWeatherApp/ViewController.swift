@@ -27,6 +27,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var groupDay2Reading: [UILabel]!
     @IBOutlet var groupDay3Reading: [UILabel]!
     
+    // saving to user default storage
     let userDefault = UserDefaults()
     
     override func viewDidLoad() {
