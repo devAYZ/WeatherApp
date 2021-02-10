@@ -7,6 +7,7 @@
 
 import Foundation
 
+// Current Weather Model
 struct CurrentWeather: Codable {
     let name: String
     let weather: [Weather]
@@ -26,3 +27,18 @@ struct Main: Codable {
         case tempMax = "temp_max"
     }
 }
+
+
+// Forecast Weather Model
+struct ForecastWeather: Codable {
+    let list: [WeatherDetails]
+}
+
+struct WeatherDetails: Codable {
+    let date: String
+    
+    enum CodingKeys: String, CodingKey {
+        case date = "dt_txt"
+    }
+}
+

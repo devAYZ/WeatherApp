@@ -30,12 +30,9 @@ class WeatherAppViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let defaults = UserDefaults.standard
-        defaults.set("Londonn", forKey: "Name")
-        
-        currentCityName.text = defaults.string(forKey: "Name")
-        
         displayCurrentWeatherInfo()
+        
+        displayForecastWeatherInfo()
     }
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
