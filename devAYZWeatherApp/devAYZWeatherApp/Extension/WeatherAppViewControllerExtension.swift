@@ -8,11 +8,17 @@
 import Foundation
 
 extension WeatherAppViewController {
-    
     func displayCurrentWeatherInfo() {
         getCity() { [weak self] (weather) in
+            
+            // satting  user default storage
+            let defaults = UserDefaults.standard
+            defaults.set(weather.name, forKey: "Name")
+        
             DispatchQueue.main.async {
-                self?.currentCityName.text = weather.name
+//                self?.currentCityName.text = weather.name
+                self?.currentCityName.text = defaults.string(forKey: "Name")
+    
                 self?.currentCityTempDescription.text = weather.weather[0].description.capitalized
                 let currentTemp = weather.main.temp.rounded()
                 for each in self!.currentCityTemp {

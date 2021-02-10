@@ -26,11 +26,15 @@ class WeatherAppViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var groupDay2Reading: [UILabel]!
     @IBOutlet var groupDay3Reading: [UILabel]!
     
-    // satting  user default storage
-    let userDefault = UserDefaults()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let defaults = UserDefaults.standard
+        defaults.set("Londonn", forKey: "Name")
+        
+        currentCityName.text = defaults.string(forKey: "Name")
+        
         displayCurrentWeatherInfo()
     }
     override var preferredStatusBarStyle: UIStatusBarStyle {
