@@ -7,9 +7,11 @@
 
 import Foundation
 func getCity(completionHandler: @escaping (CurrentWeather) -> Void){
+    
     let session = URLSession.shared
-    let apiKey = "dd10034da157e85bdf281551787a4afa"
-    let city = "Akure" // London Lagos Ikere-Ekiti Akure
+    let urlDetails = URLInfo()
+    let apiKey = urlDetails.apiKey
+    let city = urlDetails.city
     let url = URL(string: "https://api.openweathermap.org/data/2.5/weather?q=\(city)&units=metric&appid=\(apiKey)")!
     
     let task = session.dataTask(with: url) { data, response, error in

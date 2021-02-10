@@ -7,18 +7,18 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate {
+class WeatherAppViewController: UIViewController, UITextFieldDelegate {
     // all outlet
-    @IBOutlet weak var upView: UIImageView!
-    @IBOutlet weak var downView: UIView!
+    @IBOutlet weak var weatherConditionImage: UIImageView!
+    @IBOutlet weak var weatherConditionColor: UIView!
     
-    @IBOutlet open weak var cityName: UILabel!
-    @IBOutlet var day0CurrentReading: [UILabel]!
-    @IBOutlet weak var day0Description: UILabel!
-    @IBOutlet weak var day0MinReading: UILabel!
-    @IBOutlet weak var day0MaxReading: UILabel!
+    @IBOutlet open weak var currentCityName: UILabel!
+    @IBOutlet var currentCityTemp: [UILabel]!
+    @IBOutlet weak var currentCityTempDescription: UILabel!
+    @IBOutlet weak var currentCityMinTemp: UILabel!
+    @IBOutlet weak var currentCityMaxTemp: UILabel!
     
-    @IBOutlet var weatherSign: [UIImageView]!
+    @IBOutlet var currentCityWeatherIcon: [UIImageView]!
 
     @IBOutlet weak var day1: UILabel!
     

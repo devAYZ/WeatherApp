@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Weather App View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="devAYZWeatherApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WeatherAppViewController" customModule="devAYZWeatherApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -28,14 +28,14 @@
                                         <rect key="frame" x="139.5" y="106" width="135.5" height="143.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25º" textAlignment="center" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" id="LKJ-XM-WZH" userLabel="CurrentBigPercentage">
-                                                <rect key="frame" x="0.0" y="0.0" width="135" height="89"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="135.5" height="89"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="PingFangHK-Semibold" family="PingFang HK" pointSize="85"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUNNY" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumFontSize="19" id="88q-Sd-AYb" userLabel="CurrentBigRead">
-                                                <rect key="frame" x="0.0" y="90" width="135" height="53"/>
+                                                <rect key="frame" x="0.5" y="90" width="135" height="53.5"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="PingFangHK-Semibold" family="PingFang HK" pointSize="38"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -98,7 +98,7 @@
                                                 <rect key="frame" x="153" y="0.0" width="65.5" height="50"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25º" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumFontSize="16" id="Gv4-4i-WEO">
-                                                        <rect key="frame" x="9" y="0.0" width="48" height="27"/>
+                                                        <rect key="frame" x="9" y="0.0" width="47.5" height="27.5"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="32"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -116,7 +116,7 @@
                                                 <rect key="frame" x="334.5" y="0.0" width="38.5" height="50"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="27º" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumFontSize="16" id="x5d-Kc-Lsa">
-                                                        <rect key="frame" x="0.0" y="0.0" width="38" height="27"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="38.5" height="27.5"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="32"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -309,21 +309,21 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="cityName" destination="Wlr-pJ-Oy4" id="qxY-AW-bCg"/>
-                        <outlet property="day0Description" destination="88q-Sd-AYb" id="tSf-Qy-2Jy"/>
-                        <outlet property="day0MaxReading" destination="x5d-Kc-Lsa" id="54N-7k-HMm"/>
-                        <outlet property="day0MinReading" destination="bC4-2k-H9N" id="qxg-R5-gM5"/>
+                        <outlet property="currentCityMaxTemp" destination="x5d-Kc-Lsa" id="54N-7k-HMm"/>
+                        <outlet property="currentCityMinTemp" destination="bC4-2k-H9N" id="qxg-R5-gM5"/>
+                        <outlet property="currentCityName" destination="Wlr-pJ-Oy4" id="qxY-AW-bCg"/>
+                        <outlet property="currentCityTempDescription" destination="88q-Sd-AYb" id="tSf-Qy-2Jy"/>
                         <outlet property="day1" destination="1wD-oU-qtk" id="6se-Fp-jBQ"/>
-                        <outlet property="downView" destination="hYR-KG-LKf" id="Xua-8C-5G4"/>
-                        <outlet property="upView" destination="2nK-a9-AXg" id="aIJ-r2-J0C"/>
-                        <outletCollection property="day0CurrentReading" destination="LKJ-XM-WZH" collectionClass="NSMutableArray" id="qo5-4D-mAh"/>
-                        <outletCollection property="day0CurrentReading" destination="Gv4-4i-WEO" collectionClass="NSMutableArray" id="dYC-wW-d5k"/>
-                        <outletCollection property="weatherSign" destination="ikf-A7-oLt" collectionClass="NSMutableArray" id="J2X-JN-iui"/>
-                        <outletCollection property="weatherSign" destination="JYG-rF-JO7" collectionClass="NSMutableArray" id="q5b-RD-cFr"/>
-                        <outletCollection property="weatherSign" destination="b1a-UT-B2T" collectionClass="NSMutableArray" id="4vJ-Xo-xD5"/>
-                        <outletCollection property="weatherSign" destination="9Qe-aK-JxO" collectionClass="NSMutableArray" id="jCT-Zu-YEN"/>
-                        <outletCollection property="weatherSign" destination="DlY-I1-dGc" collectionClass="NSMutableArray" id="gib-e4-e4M"/>
-                        <outletCollection property="weatherSign" destination="geG-iT-5gT" collectionClass="NSMutableArray" id="DR6-t5-CPv"/>
+                        <outlet property="weatherConditionColor" destination="hYR-KG-LKf" id="Xua-8C-5G4"/>
+                        <outlet property="weatherConditionImage" destination="2nK-a9-AXg" id="aIJ-r2-J0C"/>
+                        <outletCollection property="currentCityTemp" destination="LKJ-XM-WZH" collectionClass="NSMutableArray" id="qo5-4D-mAh"/>
+                        <outletCollection property="currentCityTemp" destination="Gv4-4i-WEO" collectionClass="NSMutableArray" id="dYC-wW-d5k"/>
+                        <outletCollection property="currentCityWeatherIcon" destination="ikf-A7-oLt" collectionClass="NSMutableArray" id="J2X-JN-iui"/>
+                        <outletCollection property="currentCityWeatherIcon" destination="JYG-rF-JO7" collectionClass="NSMutableArray" id="q5b-RD-cFr"/>
+                        <outletCollection property="currentCityWeatherIcon" destination="b1a-UT-B2T" collectionClass="NSMutableArray" id="4vJ-Xo-xD5"/>
+                        <outletCollection property="currentCityWeatherIcon" destination="9Qe-aK-JxO" collectionClass="NSMutableArray" id="jCT-Zu-YEN"/>
+                        <outletCollection property="currentCityWeatherIcon" destination="DlY-I1-dGc" collectionClass="NSMutableArray" id="gib-e4-e4M"/>
+                        <outletCollection property="currentCityWeatherIcon" destination="geG-iT-5gT" collectionClass="NSMutableArray" id="DR6-t5-CPv"/>
                         <outletCollection property="groupDay1Reading" destination="2kC-qa-ghv" collectionClass="NSMutableArray" id="O4E-Sl-CQd"/>
                         <outletCollection property="groupDay2Reading" destination="77Z-vA-i76" collectionClass="NSMutableArray" id="hZS-IE-Qvs"/>
                         <outletCollection property="groupDay3Reading" destination="ebt-Dn-3xA" collectionClass="NSMutableArray" id="wW7-ZF-9lh"/>
