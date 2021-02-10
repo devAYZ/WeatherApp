@@ -3,7 +3,6 @@
 //  devAYZWeatherApp
 //
 //  Created by Ayokunle on 09/02/2021.
-//
 
 import Foundation
 
@@ -27,18 +26,3 @@ struct Main: Codable {
         case tempMax = "temp_max"
     }
 }
-
-
-// Forecast Weather Model
-struct ForecastWeather: Codable {
-    let list: [WeatherDetails]
-}
-
-struct WeatherDetails: Codable {
-    let date: String
-    
-    enum CodingKeys: String, CodingKey {
-        case date = "dt_txt"
-    }
-}
-

@@ -9,5 +9,5 @@ import Foundation
 
 struct URLInfo {
     let apiKey = "dd10034da157e85bdf281551787a4afa"
-    let city = "London" // London Seychelles Seoul Lagos Ikere-Ekiti Akure
+    let city = "Seoul" // London Seychelles Seoul Lagos Ikere-Ekiti Akure
 }

@@ -3,7 +3,6 @@
 //  devAYZWeatherApp
 //
 //  Created by Ayokunle on 28/01/2021.
-//
 
 import UIKit
 
@@ -20,13 +19,22 @@ class WeatherAppViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet var currentCityWeatherIcon: [UIImageView]!
 
-    @IBOutlet weak var day1: UILabel!
     
-    @IBOutlet var groupDay1Reading: [UILabel]!
-    @IBOutlet var groupDay2Reading: [UILabel]!
-    @IBOutlet var groupDay3Reading: [UILabel]!
+    @IBOutlet weak var dayOne: UILabel!
+    @IBOutlet weak var dayTwo: UILabel!
+    @IBOutlet weak var dayThree: UILabel!
+    @IBOutlet weak var dayFour: UILabel!
+    @IBOutlet weak var dayFive: UILabel!
+    @IBOutlet weak var daySix: UILabel!
     
-
+    
+    @IBOutlet weak var dayOneeForecastTemp: UILabel!
+    @IBOutlet weak var dayTwoForecastTemp: UILabel!
+    @IBOutlet weak var dayThreeForecastTemp: UILabel!
+    @IBOutlet weak var dayFourForecastTemp: UILabel!
+    @IBOutlet weak var dayFiveForecastTemp: UILabel!
+    @IBOutlet weak var daySixForecastTemp: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

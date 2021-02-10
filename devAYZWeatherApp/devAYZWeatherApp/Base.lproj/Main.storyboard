@@ -28,14 +28,14 @@
                                         <rect key="frame" x="139.5" y="106" width="135.5" height="143.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25º" textAlignment="center" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" id="LKJ-XM-WZH" userLabel="CurrentBigPercentage">
-                                                <rect key="frame" x="0.0" y="0.0" width="135.5" height="89"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="135" height="89"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="PingFangHK-Semibold" family="PingFang HK" pointSize="85"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUNNY" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumFontSize="19" id="88q-Sd-AYb" userLabel="CurrentBigRead">
-                                                <rect key="frame" x="0.5" y="90" width="135" height="53.5"/>
+                                                <rect key="frame" x="0.0" y="90" width="135" height="53"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="PingFangHK-Semibold" family="PingFang HK" pointSize="38"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -98,7 +98,7 @@
                                                 <rect key="frame" x="153" y="0.0" width="65.5" height="50"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25º" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumFontSize="16" id="Gv4-4i-WEO">
-                                                        <rect key="frame" x="9" y="0.0" width="47.5" height="27.5"/>
+                                                        <rect key="frame" x="9" y="0.0" width="48" height="27"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="32"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -196,38 +196,38 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="76s-Rg-unB" userLabel="Days Stack View">
                                         <rect key="frame" x="20" y="90" width="119.5" height="296"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tuesday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="1wD-oU-qtk">
-                                                <rect key="frame" x="0.0" y="0.0" width="87.5" height="26"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dayOne" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="1wD-oU-qtk">
+                                                <rect key="frame" x="0.0" y="0.0" width="81" height="26"/>
                                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="23"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wednesday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="ddL-Rz-WqF">
-                                                <rect key="frame" x="0.0" y="54" width="119.5" height="26"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dayTwo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="ddL-Rz-WqF">
+                                                <rect key="frame" x="0.0" y="54" width="79.5" height="26"/>
                                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="23"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thursday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="smE-p6-tL0">
-                                                <rect key="frame" x="0.0" y="108" width="96" height="26"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dayThree" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="smE-p6-tL0">
+                                                <rect key="frame" x="0.0" y="108" width="97.5" height="26"/>
                                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="23"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Friday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="7xw-t2-dVt">
-                                                <rect key="frame" x="0.0" y="162" width="64" height="26"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dayFour" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="7xw-t2-dVt">
+                                                <rect key="frame" x="0.0" y="162" width="84.5" height="26"/>
                                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="23"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saturday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="tGW-dw-gkd">
-                                                <rect key="frame" x="0.0" y="216" width="92.5" height="26"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dayFive" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="tGW-dw-gkd">
+                                                <rect key="frame" x="0.0" y="216" width="81" height="26"/>
                                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="23"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="z0I-Fg-rs6">
-                                                <rect key="frame" x="0.0" y="270" width="78.5" height="26"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="daySix" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="z0I-Fg-rs6">
+                                                <rect key="frame" x="0.0" y="270" width="69.5" height="26"/>
                                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="23"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -313,7 +313,18 @@
                         <outlet property="currentCityMinTemp" destination="bC4-2k-H9N" id="qxg-R5-gM5"/>
                         <outlet property="currentCityName" destination="Wlr-pJ-Oy4" id="qxY-AW-bCg"/>
                         <outlet property="currentCityTempDescription" destination="88q-Sd-AYb" id="tSf-Qy-2Jy"/>
-                        <outlet property="day1" destination="1wD-oU-qtk" id="6se-Fp-jBQ"/>
+                        <outlet property="dayFive" destination="tGW-dw-gkd" id="GFC-qN-zFj"/>
+                        <outlet property="dayFiveForecastTemp" destination="gPt-Tj-11k" id="4Qe-sJ-VJO"/>
+                        <outlet property="dayFour" destination="7xw-t2-dVt" id="cbd-Pw-uA3"/>
+                        <outlet property="dayFourForecastTemp" destination="gvJ-Ea-sg9" id="3xD-tl-tQE"/>
+                        <outlet property="dayOne" destination="1wD-oU-qtk" id="lQc-Kr-Tk1"/>
+                        <outlet property="dayOneeForecastTemp" destination="2kC-qa-ghv" id="faL-gf-sD2"/>
+                        <outlet property="daySix" destination="z0I-Fg-rs6" id="BUp-gU-Jba"/>
+                        <outlet property="daySixForecastTemp" destination="XFd-Fd-55L" id="Q7D-pv-VbX"/>
+                        <outlet property="dayThree" destination="smE-p6-tL0" id="Ujq-d8-e3q"/>
+                        <outlet property="dayThreeForecastTemp" destination="ebt-Dn-3xA" id="GQM-F6-Aww"/>
+                        <outlet property="dayTwo" destination="ddL-Rz-WqF" id="HSw-qf-QV4"/>
+                        <outlet property="dayTwoForecastTemp" destination="77Z-vA-i76" id="tx5-Il-am8"/>
                         <outlet property="weatherConditionColor" destination="hYR-KG-LKf" id="Xua-8C-5G4"/>
                         <outlet property="weatherConditionImage" destination="2nK-a9-AXg" id="aIJ-r2-J0C"/>
                         <outletCollection property="currentCityTemp" destination="LKJ-XM-WZH" collectionClass="NSMutableArray" id="qo5-4D-mAh"/>
@@ -324,12 +335,6 @@
                         <outletCollection property="currentCityWeatherIcon" destination="9Qe-aK-JxO" collectionClass="NSMutableArray" id="jCT-Zu-YEN"/>
                         <outletCollection property="currentCityWeatherIcon" destination="DlY-I1-dGc" collectionClass="NSMutableArray" id="gib-e4-e4M"/>
                         <outletCollection property="currentCityWeatherIcon" destination="geG-iT-5gT" collectionClass="NSMutableArray" id="DR6-t5-CPv"/>
-                        <outletCollection property="groupDay1Reading" destination="2kC-qa-ghv" collectionClass="NSMutableArray" id="O4E-Sl-CQd"/>
-                        <outletCollection property="groupDay2Reading" destination="77Z-vA-i76" collectionClass="NSMutableArray" id="hZS-IE-Qvs"/>
-                        <outletCollection property="groupDay3Reading" destination="ebt-Dn-3xA" collectionClass="NSMutableArray" id="wW7-ZF-9lh"/>
-                        <outletCollection property="groupDay1Reading" destination="gvJ-Ea-sg9" collectionClass="NSMutableArray" id="hfB-0B-VOE"/>
-                        <outletCollection property="groupDay2Reading" destination="gPt-Tj-11k" collectionClass="NSMutableArray" id="mUu-dq-b7g"/>
-                        <outletCollection property="groupDay3Reading" destination="XFd-Fd-55L" collectionClass="NSMutableArray" id="WMh-xU-VVq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
