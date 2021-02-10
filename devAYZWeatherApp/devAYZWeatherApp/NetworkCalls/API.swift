@@ -47,7 +47,7 @@ func getCurrentWeather(completionHandler: @escaping (CurrentWeather) -> Void){
 // Calling Forecast Weather API
 func getForecastWeather(CompletionHandler: @escaping (ForecastWeather) -> Void){
 
-    let url = URL(string: "https://api.openweathermap.org/data/2.5/forecast?q=\(city)&appid=\(apiKey)")!
+    let url = URL(string: "https://api.openweathermap.org/data/2.5/forecast?q=\(city)&units=metric&appid=\(apiKey)")!
     let forecastTask = session.dataTask(with: url) { data, response, error in
         var forecastWeather: ForecastWeather
         if error != nil || data == nil {
