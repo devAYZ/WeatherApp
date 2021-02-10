@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		046DFE3D25D2D62D00FEA9B4 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046DFE3C25D2D62D00FEA9B4 /* API.swift */; };
+		046DFE3D25D2D62D00FEA9B4 /* CurrentWeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046DFE3C25D2D62D00FEA9B4 /* CurrentWeatherAPI.swift */; };
 		046DFE6E25D33BAD00FEA9B4 /* CurrentWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046DFE6D25D33BAD00FEA9B4 /* CurrentWeatherModel.swift */; };
 		046DFE7425D3598200FEA9B4 /* URLInfoResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046DFE7325D3598200FEA9B4 /* URLInfoResources.swift */; };
-		046DFE7925D35CFF00FEA9B4 /* WeatherAppViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046DFE7825D35CFF00FEA9B4 /* WeatherAppViewControllerExtension.swift */; };
+		046DFE7925D35CFF00FEA9B4 /* WeatherAppViewControllerExtensionForCurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046DFE7825D35CFF00FEA9B4 /* WeatherAppViewControllerExtensionForCurrentWeather.swift */; };
 		046DFE8325D3F2E000FEA9B4 /* ForecastWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046DFE8225D3F2E000FEA9B4 /* ForecastWeatherModel.swift */; };
+		046DFE8725D4202600FEA9B4 /* ForecastWeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046DFE8625D4202600FEA9B4 /* ForecastWeatherAPI.swift */; };
+		046DFE8C25D421CE00FEA9B4 /* WeatherAppViewControllerExtensionForForecastWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046DFE8B25D421CE00FEA9B4 /* WeatherAppViewControllerExtensionForForecastWeather.swift */; };
 		04F161D325C341CC00954714 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F161D225C341CC00954714 /* AppDelegate.swift */; };
 		04F161D525C341CC00954714 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F161D425C341CC00954714 /* SceneDelegate.swift */; };
 		04F161D725C341CC00954714 /* WeatherAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F161D625C341CC00954714 /* WeatherAppViewController.swift */; };
@@ -21,11 +23,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		046DFE3C25D2D62D00FEA9B4 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		046DFE3C25D2D62D00FEA9B4 /* CurrentWeatherAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherAPI.swift; sourceTree = "<group>"; };
 		046DFE6D25D33BAD00FEA9B4 /* CurrentWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherModel.swift; sourceTree = "<group>"; };
 		046DFE7325D3598200FEA9B4 /* URLInfoResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLInfoResources.swift; sourceTree = "<group>"; };
-		046DFE7825D35CFF00FEA9B4 /* WeatherAppViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppViewControllerExtension.swift; sourceTree = "<group>"; };
+		046DFE7825D35CFF00FEA9B4 /* WeatherAppViewControllerExtensionForCurrentWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppViewControllerExtensionForCurrentWeather.swift; sourceTree = "<group>"; };
 		046DFE8225D3F2E000FEA9B4 /* ForecastWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastWeatherModel.swift; sourceTree = "<group>"; };
+		046DFE8625D4202600FEA9B4 /* ForecastWeatherAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastWeatherAPI.swift; sourceTree = "<group>"; };
+		046DFE8B25D421CE00FEA9B4 /* WeatherAppViewControllerExtensionForForecastWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppViewControllerExtensionForForecastWeather.swift; sourceTree = "<group>"; };
 		04F161CF25C341CC00954714 /* devAYZWeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = devAYZWeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F161D225C341CC00954714 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04F161D425C341CC00954714 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,7 +78,8 @@
 		046DFE3B25D2D60100FEA9B4 /* NetworkCalls */ = {
 			isa = PBXGroup;
 			children = (
-				046DFE3C25D2D62D00FEA9B4 /* API.swift */,
+				046DFE3C25D2D62D00FEA9B4 /* CurrentWeatherAPI.swift */,
+				046DFE8625D4202600FEA9B4 /* ForecastWeatherAPI.swift */,
 			);
 			path = NetworkCalls;
 			sourceTree = "<group>";
@@ -90,7 +95,8 @@
 		046DFE7725D35C3000FEA9B4 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				046DFE7825D35CFF00FEA9B4 /* WeatherAppViewControllerExtension.swift */,
+				046DFE7825D35CFF00FEA9B4 /* WeatherAppViewControllerExtensionForCurrentWeather.swift */,
+				046DFE8B25D421CE00FEA9B4 /* WeatherAppViewControllerExtensionForForecastWeather.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -202,11 +208,13 @@
 			files = (
 				046DFE6E25D33BAD00FEA9B4 /* CurrentWeatherModel.swift in Sources */,
 				04F161D725C341CC00954714 /* WeatherAppViewController.swift in Sources */,
-				046DFE7925D35CFF00FEA9B4 /* WeatherAppViewControllerExtension.swift in Sources */,
+				046DFE7925D35CFF00FEA9B4 /* WeatherAppViewControllerExtensionForCurrentWeather.swift in Sources */,
 				046DFE7425D3598200FEA9B4 /* URLInfoResources.swift in Sources */,
 				04F161D325C341CC00954714 /* AppDelegate.swift in Sources */,
+				046DFE8725D4202600FEA9B4 /* ForecastWeatherAPI.swift in Sources */,
 				046DFE8325D3F2E000FEA9B4 /* ForecastWeatherModel.swift in Sources */,
-				046DFE3D25D2D62D00FEA9B4 /* API.swift in Sources */,
+				046DFE8C25D421CE00FEA9B4 /* WeatherAppViewControllerExtensionForForecastWeather.swift in Sources */,
+				046DFE3D25D2D62D00FEA9B4 /* CurrentWeatherAPI.swift in Sources */,
 				04F161D525C341CC00954714 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
